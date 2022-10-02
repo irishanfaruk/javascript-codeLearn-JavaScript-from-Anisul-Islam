@@ -148,3 +148,59 @@ document.write('Addition = ' + sum + "<br>");
 sub = num1 - num2;
 document.write('Subtraction = ' + sub);
 */
+
+//Area of various shapes
+
+/*
+var base = parseFloat(prompt('Enter your base = '))
+var height = parseFloat(prompt('Enter your height = '))
+var area = base * height
+document.write('Area = ' + area);
+*/
+
+//make temperature converter
+
+//Fahrenheit to celsius
+
+/*
+var fahrenheit1 = parseFloat(prompt('Enter your Fahrenheit : '))
+var celsius1 = (fahrenheit1-32) * (5/9)
+document.write("Celsius = " + celsius1 + '<br>')
+*/
+
+//celsius to fahrenheit
+
+/*
+var celsius2 = parseFloat(prompt('Enter your Celsius : '))
+var fahrenheit2 = (celsius2*9/5) + (35)
+document.write("Fahrenheit = " + fahrenheit2)
+*/
+
+//Relational operators
+
+/*
+Operator	Description
+..........................
+
+>	        greater than
+>=	        greater than or equal to
+<	        less than
+<=	        less than or equal to
+==	        equal to
+===	        equal value and equal type
+!=	        not equal
+!==	        not equal value or not equal type
+?	        ternary operator
+*/
+
+//Logical Operators
+
+/*
+Operator	Description
+.......................
+
+&&	        logical and
+||	        logical or
+!	        logical not
+
+*/
