@@ -233,4 +233,49 @@ if (x % 2 == 0)
 console.log('Even');
 else
 console.log('odd');
+
+...........................................................
+//Task with Relational operators
+...........................................................
+
+var x = parseInt(prompt('Enter your mark'));
+
+if (x >= 80)
+    document.write("A+")
+else if (x >= 70)
+    document.write("A")
+else if (x >= 60)
+    document.write("A-")
+else if (x >= 50)
+    document.write("B")
+else if (x >= 40)
+    document.write("C")
+else if (x >= 33)
+    document.write("D")
+else
+    document.write('Sorry you are faill')
+
 */
+
+/*
+...........................................................
+//Same Task with Logical operators
+.............................................................
+var x = parseInt(prompt('Enter your mark'));
+if (x >= 100 || x < 0)
+document.write('Invalid Number ')
+else if (x >= 80 && x <= 100)
+    document.write("A+")
+else if (x >= 70 && x <= 79)
+    document.write("A")
+else if (x >= 60 && x <= 69)
+    document.write("A-")
+else if (x >= 50 && x <= 59)
+    document.write("B")
+else if (x >= 40 && x <= 49)
+    document.write("C")
+else if (x >= 33 && x <= 39)
+    document.write("D")
+else
+    document.write('Sorry you are faill')
+    */
