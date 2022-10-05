@@ -182,9 +182,9 @@ document.write("Fahrenheit = " + fahrenheit2)
 Operator	Description
 ..........................
 
->	        greater than
+>	        greater than (বড়)
 >=	        greater than or equal to
-<	        less than
+<	        less than (ছোট)
 <=	        less than or equal to
 ==	        equal to
 ===	        equal value and equal type
@@ -203,4 +203,34 @@ Operator	Description
 ||	        logical or
 !	        logical not
 
+*/
+
+
+// if, else if, else
+
+// Even or odd
+
+// If a number ends in 0 after division by 2 then it will be even and if not 0 then it is odd (যদি কোনো সংখ্যা কে ২ দিয়ে ভাগ করার পর ভাগ শেষ ০ থাকে তাহলে সেটা হবে Even আর ০ না হলে সেটি odd)
+
+// যেমন 
+/*
+var x = 5;
+if(x % 2 == 0)
+console.log('Even');
+
+//এটা Even হবেনা কারণ ৫ কে ২ দিয়ে ভাগ করলে ভাগশেষ ০ হয় না ১ থাকে  
+
+var x = 5;
+if(x % 2 != 0)
+console.log('odd');
+
+// এটা odd হবে কারণ ৫ কে ২ দিয়ে ভাগ করলে ভাগশেষ ০ হয় না ১ থাকে  
+
+best practice is below down
+
+var x = 5;
+if (x % 2 == 0)
+console.log('Even');
+else
+console.log('odd');
 */
