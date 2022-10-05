@@ -279,3 +279,28 @@ else if (x >= 33 && x <= 39)
 else
     document.write('Sorry you are faill')
     */
+/*
+
+var x = prompt('Enter Your Number-1: ')
+var y = prompt('Enter Your Number-2: ')
+var z = prompt('Enter Your Number-3: ')
+if(x > y && x > z)
+document.write("The Lage Number is X = " + x);
+else if(y > x && y > z)
+document.write("The Lage Number is Y = " + y);
+else (z > x && z > y)
+document.write("The Lage Number is Z = " + z);
+
+*/
+/*
+//vowel and consonant
+
+var x = prompt("Enter your letter")
+x = x.toLocaleLowerCase()
+if( x == "a" || x == "e" || x == "i" || x == "o" || x == "u")
+
+document.write(x + " letter is vowel")
+
+else
+document.write(x + " letter is consonant")
+*/
