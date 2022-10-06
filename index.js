@@ -304,3 +304,74 @@ document.write(x + " letter is vowel")
 else
 document.write(x + " letter is consonant")
 */
+
+// digit spelling 
+/*
+var digit = prompt('Enter Your Digit')
+if(digit == 0)
+document.write("Zero");
+else if(digit == 1)
+document.write("One");
+else if(digit == 2)
+document.write("Two");
+else if(digit == 3)
+document.write("Three");
+else if(digit == 4)
+document.write("Four");
+else if(digit == 5)
+document.write("Five");
+else if(digit == 6)
+document.write("Sixs");
+else if(digit == 7)
+document.write("Seven");
+else if(digit == 8)
+document.write("Eight");
+else if(digit == 9)
+document.write("Nine");
+else if(digit == 10)
+document.write("Ten");
+else
+document.write('Not a valid number');
+
+// Let's do it with switch (এটা করা যাক switch দিয়ে)
+
+var digit = prompt('Enter Your Digit')
+
+
+// Use the switch statement to select one of many code blocks to be executed.(স্যুইচ স্টেটমেন্ট ব্যবহার করে অনেকগুলো কোড ব্লকের মধ্যে একটি নির্বাচন করতে হবে।)
+
+switch(digit){
+    case '0':
+    document.write("One");
+    break;
+    case '2':
+    document.write("Two");
+    break;
+    case '3':
+    document.write("Three");
+    break;
+    case '4':
+    document.write("Four");
+    break;
+    case '5':
+    document.write("Five");
+    break;
+    case '6':
+    document.write("Sixs");
+    break;
+    case '7':
+    document.write("Seven");
+    break;
+    case '8':
+    document.write("Eight");
+    break;
+    case '9':
+    document.write("Nine");
+    break;
+    case '10':
+    document.write("Ten");
+    break;
+    default:
+    document.write('Not a valid number');
+}
+*/
