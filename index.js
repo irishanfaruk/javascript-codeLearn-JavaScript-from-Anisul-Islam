@@ -101,13 +101,13 @@ document.write(x);*/
 // The mathematical symbol used for addition, subtraction, multiplication, division is called operator (যোগ, বিয়োগ, গুন, ভাগের জন্য যেই গাণিতিক চিহ্ন ব্যবহার করা হয় তাকে operator বলে )
 
 /*
-Aritmetic Operators:- 
+Aritmetic Operators:-
 +	Addition (যোগ)
 -	Subtraction (বিয়োগ)
 *	Multiplication (গুন)
 /	Division (ভাগ)
 %	Modulus (Division Remainder) {ভাগ শেষ }
-**	Exponentiation 
+**	Exponentiation
 ++	Increment
 --	Decrement
 */
@@ -218,13 +218,13 @@ var x = 5;
 if(x % 2 == 0)
 console.log('Even');
 
-//এটা Even হবেনা কারণ ৫ কে ২ দিয়ে ভাগ করলে ভাগশেষ ০ হয় না ১ থাকে  
+//এটা Even হবেনা কারণ ৫ কে ২ দিয়ে ভাগ করলে ভাগশেষ ০ হয় না ১ থাকে
 
 var x = 5;
 if(x % 2 != 0)
 console.log('odd');
 
-// এটা odd হবে কারণ ৫ কে ২ দিয়ে ভাগ করলে ভাগশেষ ০ হয় না ১ থাকে  
+// এটা odd হবে কারণ ৫ কে ২ দিয়ে ভাগ করলে ভাগশেষ ০ হয় না ১ থাকে
 
 best practice is below down
 
@@ -373,5 +373,115 @@ switch(digit){
     break;
     default:
     document.write('Not a valid number');
+}
+*/
+// Loop
+// Loops can execute a block of code a number of times.(লুপ কোডের একটি ব্লক বহুবার কার্যকর করতে পারে।)
+
+/* for(starting; condition; update;){
+
+}
+starting = From where the loop will start(লুপ টা  যেইখান থেকে শুরু হবে )
+
+condition = How long will it last? (কত পর্যন্ত চলবে )
+
+update = How much will update/increase each time(প্রতিবার কত  করে update/ বাড়বে)
+
+
+for(var x = 1; x <= 10; x++){
+    document.write('<h1>Rishan Faruk</h1>');
+}
+for(var x = 1; x <= 10; x = x + 1){
+    document.write('<h1>Rishan Faru</h1>');
+}
+*/
+/* How to print 1-100
+for (var x = 1; x <= 100; x = x + 1) {
+    document.write(' ' + x);
+}
+// How to print even numbe like 0,2,4,6,--100
+for (var x = 0; x <= 100; x = x + 2) {
+    document.write(' ' + x);
+}
+
+// How to print odd numbe like 1,3,5,--99
+for (var x = 1; x <= 99; x = x + 2) {
+    document.write(' ' + x);
+}
+*/
+/* How to print 100-1
+
+for (var x = 100; x >= 1; x = x - 1) {
+    document.write(' ' + x);
+ }
+ */
+/* sum of 1 to 5
+
+var sum = 0
+for(var x = m; x <= n; x+ 1){
+    sum = sum + x;
+}
+document.write(sum);
+*/
+// sum of fast to last number form user 
+/*
+var m = parseInt(prompt('Enter Your First Number'));
+var n = parseInt(prompt('Enter Your Last Number'));
+var sum = 0
+for (var x = m; x <= n; x + 1) {
+    sum = sum + x;
+}
+document.write(sum);
+*/
+// Running a program many times(একটা প্রোগ্রাম অনেক বার চালানো)
+/*
+for (var x = 1; x <= 5; x++) {
+    var num1 = parseInt(prompt('Enter Your First Number'));
+    var num2 = parseInt(prompt('Enter Your Last Number'));
+    var sum = num1 + num2;
+    console.log(sum);
+}
+*/
+
+// while loop
+// The while loop loops through a block of code as long as a specified condition is true.(একটি নির্দিষ্ট শর্ত সত্য হওয়া পর্যন্ত যখন লুপ কোডের একটি ব্লকের মধ্য দিয়ে লুপ করে।)
+
+
+// Difference between for and while loops (পার্থক্য for এবং while লুপ এর মধ্যে)
+
+
+/* for loop like this 
+
+starting = From where the loop will start(লুপ টা  যেইখান থেকে শুরু হবে )
+
+condition = How long will it last? (কত পর্যন্ত চলবে )
+
+update = How much will update/increase each time(প্রতিবার কত  করে update/ বাড়বে)
+
+
+for(starting; condition; update;){
+
+}
+
+example
+
+for ((starting)var i  = 1; (condition)i <=5; (update)  i++) {
+    document.write( " "+ i)
+  }
+*/
+
+// while loop
+/*
+var i = 1; // starting; 
+while(i <=5)//condition
+{
+i++ //update
+}
+
+// example
+var i = 1;
+while(1 <= 5){
+    i++
+    document.write(' '+ i)
 }
 */
