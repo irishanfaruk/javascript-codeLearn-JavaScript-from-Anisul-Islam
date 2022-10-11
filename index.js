@@ -472,7 +472,8 @@ for ((starting)var i  = 1; (condition)i <=5; (update)  i++) {
 
 // while loop
 /*
-var i = 1; // starting; 
+var i = 1; // starting
+
 while(i <=5)//condition
 {
 i++ //update
@@ -484,4 +485,22 @@ while(1 <= 5){
     i++
     document.write(' '+ i)
 }
+
+
+var i = 1;
+var sum = 0;
+while (i <= 10) {
+    sum = sum + i;
+    i = i + 1
+}
+document.write(sum);
+
+// even number 2-100
+var i = 2;
+var sum = 0;
+while (i <= 100) {
+    sum = sum + i;
+    i = i + 2
+}
+console.log(sum);
 */
