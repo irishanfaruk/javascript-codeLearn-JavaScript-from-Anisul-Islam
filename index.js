@@ -153,7 +153,9 @@ document.write('Subtraction = ' + sub);
 
 /*
 var base = parseFloat(prompt('Enter your base = '))
+
 var height = parseFloat(prompt('Enter your height = '))
+
 var area = base * height
 document.write('Area = ' + area);
 */
@@ -341,7 +343,7 @@ var digit = prompt('Enter Your Digit')
 // Use the switch statement to select one of many code blocks to be executed.(স্যুইচ স্টেটমেন্ট ব্যবহার করে অনেকগুলো কোড ব্লকের মধ্যে একটি নির্বাচন করতে হবে।)
 
 switch(digit){
-    case '0':
+    case '1':
     document.write("One");
     break;
     case '2':
@@ -450,7 +452,7 @@ for (var x = 1; x <= 5; x++) {
 // Difference between for and while loops (পার্থক্য for এবং while লুপ এর মধ্যে)
 
 
-/* for loop like this 
+/* for loop like this
 
 starting = From where the loop will start(লুপ টা  যেইখান থেকে শুরু হবে )
 
@@ -503,4 +505,63 @@ while (i <= 100) {
     i = i + 2
 }
 console.log(sum);
+*/
+
+// do -while loop
+
+/*syntax of for loop
+for(var i= 1; i<=10; i++){
+    console.log(i)
+}
+
+
+// syntax of while loop
+var x = 1;
+while (x <= 10) {
+    x++;
+    console.log(x)
+}
+
+// syntax of do -while loop
+
+var i = 1; // starting
+do {
+    console.log(i);
+    i++; //update
+} while (i <= 10);//condition
+*/
+
+// how to use break and continue(কিভাবে break এবং continue ব্যবহার করবো)
+
+/*  Use of break
+
+for (var x = 1; x <= 100; x++) {
+    console.log(" " + x); // এইখানে প্রিন্ট করলে ১-১০ পর্যন্ত প্রিন্ট হবে 
+    if (x == 10) {
+        break;
+    }
+    // console.log(" " + x); // এইখানে প্রিন্ট করলে ১-৯ পর্যন্ত প্রিন্ট হবে 
+}
+*/
+
+
+/* Use of continue
+
+for (var x = 1; x <= 50; x++) {
+
+    if (x == 10) {
+        continue;           // Print nomal way 
+    }
+
+    if (x % 2 == 0) {
+        continue;           //Print odd number
+    }
+
+    if (x % 2 != 0) {
+        continue;           //Print even number
+    }
+
+    console.log(" " + x);
+}
+
 */
