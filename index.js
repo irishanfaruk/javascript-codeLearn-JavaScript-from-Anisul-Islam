@@ -536,11 +536,11 @@ do {
 /*  Use of break
 
 for (var x = 1; x <= 100; x++) {
-    console.log(" " + x); // এইখানে প্রিন্ট করলে ১-১০ পর্যন্ত প্রিন্ট হবে 
+    console.log(" " + x); // এইখানে প্রিন্ট করলে ১-১০ পর্যন্ত প্রিন্ট হবে
     if (x == 10) {
         break;
     }
-    // console.log(" " + x); // এইখানে প্রিন্ট করলে ১-৯ পর্যন্ত প্রিন্ট হবে 
+    // console.log(" " + x); // এইখানে প্রিন্ট করলে ১-৯ পর্যন্ত প্রিন্ট হবে
 }
 */
 
@@ -550,7 +550,7 @@ for (var x = 1; x <= 100; x++) {
 for (var x = 1; x <= 50; x++) {
 
     if (x == 10) {
-        continue;           // Print nomal way 
+        continue;           // Print nomal way
     }
 
     if (x % 2 == 0) {
@@ -565,3 +565,203 @@ for (var x = 1; x <= 50; x++) {
 }
 
 */
+
+// ternary operator = This operator is frequently used as an alternative to an if...else statement. (এই অপারেটরটি প্রায়শই if...else স্টেটমেন্টের বিকল্প হিসাবে ব্যবহৃত হয়।)
+
+
+// var number = Number(prompt('Enter your number'));
+
+// If 2 conditions are met (যদি ২ টি Condition হয়ে থাকে তাহলে) 
+
+//  with if or else 
+
+/*if (number > 0) {
+    console.log('positive');
+}
+else {
+    console.log('negative');
+}*/
+// With ternary operator
+
+
+/* Number 1 way
+var y = number > 0 ? 'positive' : 'negative'
+console.log(y)*/
+
+/* number 2 way
+number > 0 ? console.log('positive') : console.log('negative');
+*/
+
+// If the condition is more than 2 then(যদি ২ এর অধিক  Condition হয়ে থাকে তাহলে)
+
+//  with if or else 
+/*if (number > 0) {
+    console.log('positive');
+}
+/*else if (number < 0) {
+    console.log('Negative');
+}
+else {
+    console.log('Zero');
+}*/
+
+/*
+with ternary operator
+var y = number > 0 ? 'positive' : number < 0 ? 'Negative' : 'Zero';
+console.log(y)
+*/
+
+// traditional function
+//function 
+/*
+var x = 5;
+var y = x * x;
+console.log(y) + '<br>';
+
+var x = 5;
+var y = x * x;
+console.log(y) + '<br>';
+
+var x = 5;
+var y = x * x;
+console.log(y) + '<br>';
+
+*/
+
+//A task that needs to be done repeatedly can be done 1 time with a function(এমন বারবার করা লাগে এমন কাজকে function দিয়ে ১ বার করা যায়)
+
+
+/* কিভাবে এটা use করা হয়
+
+A JavaScript function is defined with the function keyword, followed by a name, followed by parentheses (). (একটি জাভাস্ক্রিপ্ট ফাংশন ফাংশন কীওয়ার্ড দ্বারা সংজ্ঞায়িত করা হয়, একটি নাম অনুসরণ করে, বন্ধনী () দ্বারা অনুসরণ করা হয়।)
+
+Function names can contain letters, digits, underscores, and dollar signs (same rules as variables). (ফাংশনের নামগুলিতে অক্ষর, অঙ্ক, আন্ডারস্কোর এবং ডলার চিহ্ন থাকতে পারে (ভেরিয়েবলের মতো একই নিয়ম))
+
+The parentheses may include parameter names separated by commas: (parameter1, parameter2, ...)(বন্ধনীতে কমা দ্বারা বিভক্ত প্যারামিটার নাম অন্তর্ভুক্ত থাকতে পারে: (প্যারামিটার1, প্যারামিটার2, ...))
+*/
+/*
+// create function
+
+function i() {
+    var x = 5;
+    var y = x * x;
+    //console.log('Result =  ' + y + '<br>');
+
+    document.write('Result =  ' + y + '<br>');
+}
+
+// Calling A function
+
+i()
+i()
+i()
+i()
+*/
+
+/*
+
+// using parameter
+
+// create function
+function i(x) {
+
+    var y = x * x;
+    //console.log('Result =  ' + y + '<br>');
+
+    document.write('Result =  ' + y + '<br>');
+}
+
+// Calling A function
+
+i(5)
+i(9)
+i(12)
+i(17)
+*/
+
+/*
+//using multiple parameters
+
+// create function
+
+function i(x1, x2) {
+
+    var y = x1 * x2;
+    //console.log('Result =  ' + y + '<br>');
+
+    document.write('Result =  ' + y + '<br>');
+}
+
+
+// Calling A function
+
+i(5,6);
+*/
+/*
+//using multiple parameters with return
+
+// create function
+
+function i(x1, x2) {
+
+    var y = x1 * x2;
+    return  y;
+}
+
+
+// Calling A function
+
+// document.write(i(5, 6));
+var z = i(5, 6);
+document.write(z)''
+*/
+
+/*
+//Addition function (যৌগিক ফাংশন)
+
+// create function
+function i(x1, x2) {
+
+    var y = x1 + x2;
+    //console.log('Result =  ' + y + '<br>');
+
+    document.write('Result =  ' + y + '<br>');
+}
+// Calling A function
+i(20, 10);
+
+//subtraction function(বিয়োগ ফাংশন)
+
+// create function
+function z(x1, x2) {
+
+    var y = x1 - x2;
+    //console.log('Result =  ' + y + '<br>');
+
+    document.write('Result =  ' + y + '<br>');
+}
+// Calling A function
+z(50, 20);
+*/
+
+// IIFEs and function
+
+/*An IIFE (Immediately Invoked Function Expression) is a JavaScript function that runs as soon as it is defined. (একটি IIFE (Immediately Invoked Function Expression) হল একটি জাভাস্ক্রিপ্ট ফাংশন যা সংজ্ঞায়িত হওয়ার সাথে সাথে চলে।)*/
+
+
+//normal/traditional function
+
+function dis() {
+    console.log('Hello')
+}
+dis()
+
+    // IIFE function
+
+    // (function dis2() {
+    //     console.log('Hello agan')
+    // })();
+
+    (function dis2(fb) {
+        console.log(fb)
+    })("Hello again");
