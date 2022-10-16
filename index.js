@@ -748,7 +748,7 @@ z(50, 20);
 
 /*An IIFE (Immediately Invoked Function Expression) is a JavaScript function that runs as soon as it is defined. (একটি IIFE (Immediately Invoked Function Expression) হল একটি জাভাস্ক্রিপ্ট ফাংশন যা সংজ্ঞায়িত হওয়ার সাথে সাথে চলে।)*/
 
-
+/*
 //normal/traditional function
 
 function dis() {
@@ -765,3 +765,62 @@ dis()
     (function dis2(fb) {
         console.log(fb)
     })("Hello again");
+
+*/
+/*
+//function expression
+
+
+// var dis1 = function dis6() {
+//     console.log("hello broh");
+// }
+
+// dis1();
+
+
+var dis1 = function dis6(msg) {
+    console.log(msg);
+}
+
+dis1('hello broh');
+
+*/
+
+/*
+// math with IIFE
+(function dis2(num1, num2) {
+        sum = num1 + num2;
+        console.log(sum)
+    })(70, 80);
+
+// with function expression
+// 1 number way 
+var sum1 = function add1(num1, num2) {
+    sum = num1 + num2;
+    console.log(sum);
+}
+
+sum1(20, 10);
+
+// 2 number way 
+var sum2 = function add(num1, num2) {
+    var sum = num1 + num2
+    return sum;
+}
+console.log(sum2(50, 40));
+
+*/
+
+// how to create and use array
+// An array is formed by many variables(অনেক গুলা variable মিলে array  ঘটিত হয়)
+
+// Normally called variable like (সাধারণ ভাবে আমরা যেইভাবে variable কল করি)
+var x = "faruk"
+var y = 'Ahmed'
+
+// or
+var a1, b1, c1, d1;
+a1 = 'md'
+b1 = 'omar'
+c1 = 'faruk'
+d1 = 'ahmed'
