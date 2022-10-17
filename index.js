@@ -814,7 +814,8 @@ console.log(sum2(50, 40));
 // how to create and use array
 // An array is formed by many variables(অনেক গুলা variable মিলে array  ঘটিত হয়)
 
-// Normally called variable like (সাধারণ ভাবে আমরা যেইভাবে variable কল করি)
+/*
+Normally called variable like (সাধারণ ভাবে আমরা যেইভাবে variable কল করি)
 var x = "faruk"
 var y = 'Ahmed'
 
@@ -824,3 +825,289 @@ a1 = 'md'
 b1 = 'omar'
 c1 = 'faruk'
 d1 = 'ahmed'
+*/
+// variable called with array (array এর মাধ্যমে variable কল করি)
+
+/*
+// Method of using array 1
+var names = new Array(); //You can declare the size of the array if you want like Array(10) this is Not mandatory
+// var names = new Array(10);
+names[0] = "Faruk"
+names[1] = "Ahmed"
+names[2] = "Omar"
+names[3] = "Ariyan"
+names[4] = "Afrahim"
+names[5] = "Rohan"
+names[6] = "Rafin"
+names[7] = "Maysha"
+//print full array
+
+console.log(names);
+
+//print single array 
+
+console.log(names[2], names[0])
+console.log(names[3], names[5])
+console.log(names[4], names[6])
+console.log(names[7])
+
+//how to chk array size 
+
+console.log(names.length);.*/
+
+/*
+// Method of using array 2
+
+var names1 = ['Faruk', 'Omar', 'MD', 'Ariyan', 'Afrahim', 'Rohan', 'Rafin', 'Maysha']
+
+
+//print full array
+
+console.log(names1);
+
+
+//print single array 
+
+console.log(names1[2], names1[1], names1[0])
+console.log(names1[3], names1[5])
+console.log(names1[4], names1[6])
+console.log(names1[7])
+
+//how to chk array size 
+
+console.log(names1.length);
+
+---------------------------------------------------------------
+push
+The push() method adds new items to the end of an array.
+The push() method changes the length of the array.
+The push() method returns the new length.
+-------------------------------------------------------------------
+
+names1.push('And,');
+names1.push('Who');
+names1.push('are');
+names1.push('you');
+console.log(names1);
+console.log(names1.length);
+console.log(names1[8])
+
+
+---------------------------------------------------------------------
+pop
+The pop() method removes (pops) the last element of an array.
+The pop() method changes the original array.
+The pop() method returns the removed element.
+------------------------------------------------------------------------
+
+
+names1.pop()
+console.log(names1);
+console.log(names1.length);
+
+
+// note: push এর মাধ্যমে array তে নতুন আইটেম যোগ করা যায় array এর শেষে, আর pop আর মাধ্যমে array এর শেষ আইটেম কে রিমুভ করা যায় 
+
+
+// How to concat(add) 2 arrays together(২ টি array কিভাবে  একসাথে concat  (যোগ ) করা যায়)
+
+var x1 = ['Bangladesh', 'India']
+var x2 = ['Srilanka', 'Nepal']
+var x = x1.concat(x2);
+console.log(x)
+
+*/
+
+/*
+//How to loop an Array
+
+// with number 
+var num = [10, 20, 30, 40, 50]
+for (var i = 0; i < 5; i++) {
+    console.log(num[i])
+}
+
+// with string 
+
+var names2 = ['MD', 'Omar', 'Faruk', 'I am']
+for (var i = 0; i < 4; i++) {
+    console.log(names2[i])
+}
+
+// sum with array loop
+
+var num1 = [10, 20, 30, 40, 50]
+var sum = 0
+for (var x = 0; x < 5; x++) {
+    console.log(num1[x])
+    sum = sum + num1[x]
+}
+console.log(sum)
+
+// sum with array loop input from user
+
+var num2 = new Array();
+for (var y = 0; y < 5; y++) {
+    num2[y] = parseInt(prompt('Enter a number'))
+}
+
+var sum = 0
+for (var y = 0; y < 5; y++) {
+    console.log(num2[y])
+    sum = sum + num2[y]
+}
+console.log(sum)
+*/
+
+// Array library methods
+
+
+var names = ['Faruk', 'Omar', 'MD', 'Ariyan', 'Afrahim', 'Rohan', 'Rafin', 'Maysha']
+
+//print full array
+
+console.log(names);
+
+
+//print single array 
+
+console.log(names[2], names[1], names[0])
+console.log(names[3], names[5])
+console.log(names[4], names[6])
+console.log(names[7])
+
+//how to chk array size 
+
+console.log(names.length);
+
+/*
+---------------------------------------------------------------
+    push
+The push() method adds new items to the end of an array.
+The push() method changes the length of the array.
+The push() method returns the new length.
+-------------------------------------------------------------------
+*/
+    names.push('And,');
+console.log(names);
+console.log(names.length);
+console.log(names[5])
+
+/*
+---------------------------------------------------------------------
+    pop
+The pop() method removes(pops) the last element of an array.
+The pop() method changes the original array.
+The pop() method returns the removed element.
+------------------------------------------------------------------------
+*/
+    names.pop()
+console.log(names);
+console.log(names.length);
+
+
+/*
+------------------------------------------------------------------
+    concat()
+The concat() method concatenates(joins) two or more arrays.
+The concat() method returns a new array, containing the joined arrays.
+The concat() method does not change the existing arrays.
+------------------------------------------------------------------
+*/
+var x1 = ['Bangladesh', 'India']
+var x2 = ['Srilanka', 'Nepal']
+var x = x1.concat(x2);
+console.log(x)
+
+
+/*
+// shift opposite of pop 
+------------------------------------------------------------------
+    shift()
+The shift() method removes the first item of an array.
+The shift() method changes the original array.
+The shift() method returns the shifted element.
+------------------------------------------------------------------
+*/
+    names.shift()
+console.log(names);
+console.log(names.length);
+
+/*
+// unshift opposite of push
+----------------------------------------------------------------
+    unshift()
+The unshift() method adds new elements to the beginning of an array.
+The unshift() method overwrites the original array.
+-------------------------------------------------------------------
+*/
+
+    names.unshift('Rishan')
+console.log(names);
+console.log(names.length);
+
+
+
+/*
+----------------------------------------------------------------
+    splice()
+The splice() method adds and / or removes array elements.
+The splice() method overwrites the original array.
+
+
+
+
+Syntax (using systems)
+names.splice(index, howmany, item1, ....., itemX)
+
+Parameter	            Description
+--------------------------------------
+index	                Required.
+                        The position to add/remove items.
+                        Negative value defines the position from the end of the array.
+
+howmany	                Optional.
+                        Number of items to be removed.
+item1, 
+..., itemX	            Optional.
+                        New elements(s) to be added.
+-------------------------------------------------------------------
+*/
+// add Elements 
+names.splice(1,0,'Hi bro','you are mad')
+console.log(names);
+
+// remove Elements 
+names.splice(1,2,)
+console.log(names);
+
+// both 
+names.splice(6, 2, 'Maysha', 'Rafin')
+console.log(names);
+
+/*
+----------------------------------------------------------------
+        slice()
+The slice() method returns selected elements in an array, as a new array.
+The slice() method selects from a given start, up to a(not inclusive) given end.
+The slice() method does not change the original array.
+-------------------------------------------------------------------
+*/
+
+/*
+----------------------------------------------------------------
+        sort()  
+The sort() sorts the elements of an array.
+The sort() overwrites the original array.
+The sort() sorts the elements as strings in alphabetical and ascending order.
+-------------------------------------------------------------------
+*/
+
+
+/*
+----------------------------------------------------------------
+        reverse()
+The reverse() method reverses the order of the elements in an array.
+The reverse() method overwrites the original array.
+-------------------------------------------------------------------
+*/
