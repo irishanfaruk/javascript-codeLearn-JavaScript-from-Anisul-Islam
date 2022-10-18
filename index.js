@@ -959,6 +959,7 @@ for (var y = 0; y < 5; y++) {
 console.log(sum)
 */
 
+/*
 // Array library methods
 
 
@@ -980,47 +981,47 @@ console.log(names[7])
 
 console.log(names.length);
 
-/*
+
 ---------------------------------------------------------------
     push
 The push() method adds new items to the end of an array.
 The push() method changes the length of the array.
 The push() method returns the new length.
 -------------------------------------------------------------------
-*/
-    names.push('And,');
+
+names.push('And,');
 console.log(names);
 console.log(names.length);
 console.log(names[5])
 
-/*
+
 ---------------------------------------------------------------------
     pop
 The pop() method removes(pops) the last element of an array.
 The pop() method changes the original array.
 The pop() method returns the removed element.
 ------------------------------------------------------------------------
-*/
-    names.pop()
+
+names.pop()
 console.log(names);
 console.log(names.length);
 
 
-/*
+
 ------------------------------------------------------------------
     concat()
 The concat() method concatenates(joins) two or more arrays.
 The concat() method returns a new array, containing the joined arrays.
 The concat() method does not change the existing arrays.
 ------------------------------------------------------------------
-*/
+
 var x1 = ['Bangladesh', 'India']
 var x2 = ['Srilanka', 'Nepal']
 var x = x1.concat(x2);
 console.log(x)
 
 
-/*
+
 // shift opposite of pop 
 ------------------------------------------------------------------
     shift()
@@ -1028,27 +1029,26 @@ The shift() method removes the first item of an array.
 The shift() method changes the original array.
 The shift() method returns the shifted element.
 ------------------------------------------------------------------
-*/
-    names.shift()
+
+names.shift()
 console.log(names);
 console.log(names.length);
 
-/*
+
 // unshift opposite of push
 ----------------------------------------------------------------
     unshift()
 The unshift() method adds new elements to the beginning of an array.
 The unshift() method overwrites the original array.
 -------------------------------------------------------------------
-*/
 
-    names.unshift('Rishan')
+
+names.unshift('Rishan')
 console.log(names);
 console.log(names.length);
 
 
 
-/*
 ----------------------------------------------------------------
     splice()
 The splice() method adds and / or removes array elements.
@@ -1072,42 +1072,130 @@ item1,
 ..., itemX	            Optional.
                         New elements(s) to be added.
 -------------------------------------------------------------------
-*/
+
 // add Elements 
-names.splice(1,0,'Hi bro','you are mad')
+names.splice(1, 0, 'Hi bro', 'you are mad')
 console.log(names);
 
 // remove Elements 
-names.splice(1,2,)
+names.splice(1, 2,)
 console.log(names);
 
 // both 
 names.splice(6, 2, 'Maysha', 'Rafin')
 console.log(names);
 
-/*
+
 ----------------------------------------------------------------
         slice()
 The slice() method returns selected elements in an array, as a new array.
 The slice() method selects from a given start, up to a(not inclusive) given end.
 The slice() method does not change the original array.
--------------------------------------------------------------------
-*/
 
-/*
+
+
+
+Syntax
+array.slice(start, end)
+
+
+Parameter	                Description
+-------------------------------------------
+start	                    Optional.
+                            Start position. Default is 0.
+                            Negative numbers select from the end of the array.
+
+
+end	                        Optional.
+                            End position. Default is last element.
+                            Negative numbers select from the end of the array.
+-------------------------------------------------------------------
+
+var newNames = names.slice(2)
+console.log(newNames)
+console.log(names)
+
 ----------------------------------------------------------------
         sort()  
 The sort() sorts the elements of an array.
 The sort() overwrites the original array.
 The sort() sorts the elements as strings in alphabetical and ascending order.
+
+
+Syntax
+var newSort = names.sort();
+
+Parameter	             Description
+-------------------------------------
+
+compareFunction	        Optional.
+
+                        A function that defines a sort order. The function should return a negative, zero, or positive value, depending on the arguments:
+                            function(a, b){return a-b}
+                        When sort() compares two values, it sends the values to the compare function, and sorts the values according to the returned (negative, zero, positive) value.
+
+Example:
+
+The sort function will sort 40 as a value lower than 100.
+
+When comparing 40 and 100, sort() calls the function(40,100).
+
+The function calculates 40-100, and returns -60 (a negative value).
 -------------------------------------------------------------------
-*/
 
 
-/*
+var newSort = names.sort();
+console.log(newSort)
+console.log(names)
+
 ----------------------------------------------------------------
         reverse()
+
 The reverse() method reverses the order of the elements in an array.
 The reverse() method overwrites the original array.
+
+
+        Syntax
+var newSort = names.sort();
+names.reverse()
+
 -------------------------------------------------------------------
+
+var newSort = names.sort();
+names.reverse()
+console.log(newSort)
+
+//how to do number sorting
+
+var numbers = [50, 16, 8, 39, 25, 80, 60, 1]
+console.log(numbers)
+numbers.sort(function (x, y) {
+    return x - y;
+})
+console.log(numbers)
 */
+
+// one dimensional array
+var names = ['Ronaldo 7', 'Vini jnr', 'Karim Benzima', 'Messi', 'Neymar', 'Sadio Mane', 'M. Salah', 'Haaland', 'Bell']
+
+for (var i = 0; i < 9; i++) {
+    console.log(names[i])
+}
+
+
+//create a function called highestScore that will 
+// Receive a 1d arry called scores
+//return the highest score
+
+function highScore(scores) {
+    var max = scores[0]
+    for (var i = 1; i < scores.length; i++) {
+        if (max < scores[i]) {
+            max = scores[i]
+        }
+    }
+    return max;
+}
+var x = [200, 290, 300, 500, 600, 99, 590, 999]
+var maxScore = highScore(x)
+console.log(maxScore)
