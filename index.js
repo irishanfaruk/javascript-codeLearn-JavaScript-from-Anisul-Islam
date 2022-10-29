@@ -1175,6 +1175,10 @@ numbers.sort(function (x, y) {
 console.log(numbers)
 */
 
+
+
+/*
+
 // one dimensional array
 var names = ['Ronaldo 7', 'Vini jnr', 'Karim Benzima', 'Messi', 'Neymar', 'Sadio Mane', 'M. Salah', 'Haaland', 'Bell']
 
@@ -1199,3 +1203,140 @@ function highScore(scores) {
 var x = [200, 290, 300, 500, 600, 99, 590, 999]
 var maxScore = highScore(x)
 console.log(maxScore)
+
+
+*/
+
+// two dimensional array
+
+var playerInfo = [['Virat Kholi', 125], ['MS Dhoni', 80], ['Joe Root', 145], ['Maxwell', 61], ['Mohammad Rezwan', 120]]
+
+/*
+--------------------------------------------
+// this is row      This is colum 
+// String index     number index
+// -------------------------------- 
+console.log(playerInfo[0][0])
+console.log(playerInfo[0][1])
+console.log(playerInfo[1][0])
+console.log(playerInfo[1][1])
+console.log(playerInfo[2][0])
+console.log(playerInfo[2][1])
+console.log(playerInfo[3][0])
+console.log(playerInfo[3][1])
+console.log(playerInfo[4][0])
+console.log(playerInfo[4][1])
+--------------------------------------------
+
+
+for (var i = 0; i < 5; i++) {
+    for (var x = 0; x < 2; x++) {
+        console.log(playerInfo[i][x])
+    }
+}
+*/
+/*
+//Create a function called highestRunScorer that will
+//Receive a 2nd array called playerInfo
+//Based on highest scroe, return the name of the player 
+
+function highestRunScorer(playerInfo) {
+    var hightestScore = playerInfo[0][0]
+    var hightestScore = playerInfo[0][1]
+    for (var i = 1; i < playerInfo.length; i++) {
+        if (hightestScore < playerInfo[i][1]) {
+            hightestScore = playerInfo[i][1]
+            hightestScore = playerInfo[i][0]
+        }
+    }
+    return hightestScore;
+}
+
+var playerInfo = [
+    ['Virat Kholi', 125],
+    ['MS Dhoni', 80],
+    ['Joe Root', 145],
+    ['Maxwell', 61],
+    ['Mohammad Rezwan', 120]
+]
+var topScorer = highestRunScorer(playerInfo);
+console.log(topScorer)
+*/
+
+
+// how to create and use object
+
+//The way we normally store data
+/*
+var name = 'Faruk Ahmed'
+var age = 24
+var cGpa = 3.98
+var lang = ['Bangla', 'English', 'Hindi']
+
+//The way we store data is with objects
+
+var studentsData = {
+    name: 'Faruk Ahmed',
+    age: 24,
+    cGpa: 3.98,
+    lang: ['Bangla', 'English', 'Hindi']
+
+}
+// how to print data
+// console.log(studentsData)
+console.log(studentsData.name)
+*/
+
+/*
+// How object templates are created
+// adding constructor
+
+// adding a function inside a constructor
+
+
+function Student(name, age, cgpa, lang) {
+    this.name = name
+    this.age = age
+    this.cgpa = cgpa
+    this.lang = lang
+
+
+    // adding a function inside a constructor
+
+
+    this.print = function () {
+        console.log(this.name)
+        console.log(this.age)
+        console.log(this.cgpa)
+        console.log(this.lang)
+    }
+}
+var student1 = new Student('Faruk Ahmed', 21, 3.97, ['Bangla', 'English', 'Hindi'])
+var student2 = new Student('Rishan Ahmed', 21, 3.97, ['Bangla', 'English', 'Hindi'])
+var student3 = new Student('Omar Faruk', 21, 3.97, ['Bangla', 'English', 'Hindi'])
+
+student1.print()
+*/
+
+
+// Guessing Game
+
+var numberofwin = 0
+var numberoflost = 0
+
+for (var i = 1; i <= 5; i++) {
+    var guessNumber = parseInt(prompt('Enter a number 1 to 5'));
+
+    var randomNumber = Math.floor(Math.random() * 5) + 1;
+    if (guessNumber == randomNumber) {
+        console.log(' You are win');
+        numberofwin++;
+    }
+    else {
+        console.log("You are lost, Random number was " + randomNumber);
+        numberoflost++;
+    }
+}
+
+document.write('Total Number of win = ' + numberofwin + '<br>')
+document.write('Total Number of lost = ' + numberoflost + '<br>')
